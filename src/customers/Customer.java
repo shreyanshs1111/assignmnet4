@@ -79,7 +79,7 @@ public class Customer implements Validation{
             else if(field.equalsIgnoreCase("ssn")){
                 System.out.print("Enter the new ssn __\t");
                 ssn = sc.nextLine();
-                if(this.validateSSN()){
+                if(!this.validateSSN()){
                     System.out.println("Invalid SSN");
                 }
             }
@@ -94,7 +94,7 @@ public class Customer implements Validation{
             else if(field.equalsIgnoreCase("age")){
                 System.out.print("Enter the new Age __\t");
                 age = Integer.parseInt(sc.nextLine());
-                if(this.validateAge()){
+                if(!this.validateAge()){
                     System.out.println("Invalid Age");
                 }
             }
